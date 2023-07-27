@@ -1,3 +1,6 @@
+/*
+Este es un ejemplo de Java, tambien de Git
+*/
 package tercer_ejemplo;
 
 public class numero {
