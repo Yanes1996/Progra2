@@ -1,9 +1,6 @@
 // ejemplo de herencia
 package herencia;
 
-/**
- * @author Usuario
- */
 public class ClsCuenta {
     //atributos
     protected float saldo;

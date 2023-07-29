@@ -1,23 +1,19 @@
-
 package herencia;
 
-/**
- * @author Usuario
- */
 public class ClsCuentaAhorros extends ClsCuenta {
     // atributo
     private boolean activa;
     
     
     // constructor
-    public ClsCuentaAhorros(float saldo, float tasa){
-        super(saldo,tasa);
-        if(saldo<10000){ 
+    public ClsCuentaAhorros(float saldo, float tasa) {
+        super(saldo, tasa);
+        if (saldo < 10000) 
             activa = false;
-        }else{ 
+        else
             activa = true;
-        }    
     }
+    
     
     @Override
     public void retirar(float cantidad){
@@ -46,6 +42,5 @@ public class ClsCuentaAhorros extends ClsCuenta {
         System.out.println("Número de transacciones = " + (numeroConsignacion + numeroRetiros));
         System.out.println();
     }
-    
 } 
 
