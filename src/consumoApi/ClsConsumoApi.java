@@ -14,7 +14,7 @@ public class ClsConsumoApi {
     public static void main(String[] args){
         try{
         // Hacer el llamado
-            URL url = new URL("https://fakestoreapi.com/products?limit=5");
+            URL url = new URL("https://fakestoreapi.com/products/1");
             HttpURLConnection cn = (HttpURLConnection) url.openConnection();
             cn.setRequestMethod("GET");
             cn.connect();
@@ -22,7 +22,7 @@ public class ClsConsumoApi {
         // Es correcta
             int responseCode = cn.getResponseCode();
             if(responseCode != 200){
-                throw new RuntimeException ("Ocurrio un error: " + responseCode);
+                throw new RuntimeException ("Ocurrio un error al consumir: " + responseCode);
             }else {
                 
         // Scannear los datos                
